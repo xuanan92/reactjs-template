@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply m-0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .header {
+    @apply p-4;
+    @apply flex flex-row items-center justify-between;
+    @apply bg-green-50;
+  }
+  .header_nav > ul {
+    @apply p-4 gap-4;
+    @apply text-white bg-amber-900;
+    @apply flex flex-row;
+  }
+  .btn {
+    @apply px-4 py-2 rounded-md;
+  }
+}
+
+@layer utilities {
+  $primary_color: bg-green-500;
+  $secondary_color: bg-yellow-500;
+  $third_color: bg-red-500;
+  $fourth_color: bg-blue-500;
+}
