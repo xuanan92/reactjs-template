@@ -32,6 +32,9 @@
     @apply text-white bg-amber-900;
     @apply flex flex-row;
   }
+  .home {
+    @apply p-4;
+  }
   .btn {
     @apply px-4 py-2 rounded-md;
   }
